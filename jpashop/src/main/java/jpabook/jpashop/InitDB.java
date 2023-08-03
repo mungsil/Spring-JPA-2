@@ -29,7 +29,7 @@ public class InitDB {
     @RequiredArgsConstructor
     static class InitService {
 
-        @PersistenceContext //강의에서 해당 어노테이션을 안다는 이유는 뭘까?
+        @PersistenceContext //강의에서 해당 어노테이션을 안다는 이유 -> @RequiredArgsConstructor으로 엔티티매니저를 생성자 주입
         private final EntityManager em; //엔티티를 조회하고 변경하기 위해서 필요함
         public void dbInit1() {
 
